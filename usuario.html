@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecno-Stream - Registro</title>
+  <link rel="stylesheet" href="styles_usu.css">
+  <script src="script.js"></script> 
+</head>
+<body>
+    <body>
+        <div class="top-bar">
+          <div class="container">
+            <div class="logo-container">
+              <img src="casa-inteligente.png" alt="Logo" class="logo">
+              <h1 class="store-name">Tecno-Stream</h1>
+            </div>
+            <div class="other-logos">
+              <a href="busqueda.html"><img src="buscar.png" alt="Busqueda" class="other-logo"></a>
+              <a href="pagina2.html"><img src="carrito-de-compras (1).png" alt="Compras" class="other-logo"></a>
+              <a href="usuario.html"><img src="perfil-del-usuario.png" alt="Usuario" class="other-logo"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="sidebar">
+          <div class="sidebar-logos">
+            <a href="pagina4.html"><img src="vr.png" alt="Monitores" class="sidebar-logo"></a>
+            <a href="pagina5.html"><img src="auriculares.png" alt="Audifonos" class="sidebar-logo"></a>
+            <a href="pagina6.html"><img src="teclado.png" alt="Teclados" class="sidebar-logo"></a>
+            <a href="pagina7.html"><img src="raton-inalambrico.png" alt="Mouse" class="sidebar-logo"></a>
+            <a href="pagina8.html"><img src="almohadilla-de-juego (1).png" alt="Controles" class="sidebar-logo"></a>
+            <a href="pagina9.html"><img src="camara.png" alt="Camaras" class="sidebar-logo"></a>
+            <a href="pagina10.html"><img src="zumbido.png" alt="Otros..." class="sidebar-logo"></a>
+          </div>
+        </div>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="registration-form">
+        <h2>Registro de Usuario</h2>
+        <form>
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></p>
+      </div>
+      <div class="employee-section">
+        <h2>¿Eres empleado?</h2>
+        <p>Inicia sesión en la sección de empleado para agregar artículos.</p>
+        <button class="employee-button" onclick="abrirVentanaEmpleado()">Empleado</button>
+      </div>
+    </div>
+  </main>
+  <head>
+    <script>
+      function abrirVentanaEmpleado() {
+  var codigoEmpleado = prompt("Ingresa el código de empleado:");
+
+  if (codigoEmpleado === "1234") {
+    window.open("agregar_producto.html", "_blank", "width=400,height=400");
+  } else {
+    alert("Código de empleado incorrecto");
+  }
+}
+
+    </script>
+  </head>
+  
+  <script src="script.js"></script>
+</body>
+</html>   

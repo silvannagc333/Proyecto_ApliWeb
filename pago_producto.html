@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pago de Producto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles_pago.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <div class="logo">
+      <img src="casa-inteligente.png" alt="Logo de la tienda">
+    </div>
+    <div class="store-name">
+      <h1>Tecno-Stream</h1>
+    </div>
+    <div class="right-icons">
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <div class="container">
+      <h2>Pago de Producto</h2>
+      <form>
+        <div>
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+        <div>
+          <label for="codigo-postal">Código Postal:</label>
+          <input type="text" id="codigo-postal" name="codigo-postal" required>
+        </div>
+        <div>
+          <label for="tarjeta">Número de Tarjeta:</label>
+          <input type="text" id="tarjeta" name="tarjeta" required>
+        </div>
+        <div>
+          <label for="seguridad">Número de Seguridad:</label>
+          <input type="text" id="seguridad" name="seguridad" required>
+          <div>
+            <label for="fecha-expiracion">Fecha de Expiración:</label>
+            <input type="text" id="fecha-expiracion" name="fecha-expiracion" class="datepicker" required>
+          </div>
+        <div class="button-group">
+          <button type="submit" class="btn-comprar">Comprar</button>
+          <button type="button" class="btn-cancelar">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    $(".datepicker").datepicker({
+    dateFormat: "yy-mm-dd" // Formato de la fecha
+  });
+
+    $(document).ready(function() {
+      $("form").submit(function(event) {
+        event.preventDefault();
+
+        $(document).ready(function() {
+});
+
+        // Mostrar el mensaje de compra exitosa con SweetAlert
+        Swal.fire({
+          icon: 'success',
+          title: '¡Compra realizada!',
+          text: 'Gracias por preferirnos, su producto esta en camino.'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

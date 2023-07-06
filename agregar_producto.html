@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecno-Stream - Agregar Producto</title>
+  <link rel="stylesheet" href="styles_agreprod.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="casa-inteligente.png" alt="Logo de la tienda">
+    </div>
+    <div class="store-name">
+      <h1>Tecno-Stream</h1>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <h2>Agregar Producto</h2>
+      <form>
+        <div>
+          <label for="nombre">Nombre del producto:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" step="0.01" required>
+        </div>
+        <div>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecciona una categoría</option>
+              <option value="electrónica">Monitor</option>
+              <option value="ropa">Audifonos</option>
+              <option value="hogar">Teclado</option>
+              <option value="electrónica">Mouse</option>
+              <option value="ropa">Control</option>
+              <option value="hogar">Camara</option>
+              <option value="hogar">Otros...</option>
+              <!-- Agrega más opciones de categoría según tus necesidades -->
+            </select>
+          </div>
+        <div>
+          <label for="imagen">Imagen:</label>
+          <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn-agregar">Agregar</button>
+          <button type="button" class="btn-cancelar" onclick="cancelarAgregar()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

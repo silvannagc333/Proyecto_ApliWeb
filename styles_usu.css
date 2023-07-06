@@ -1,0 +1,161 @@
+body {
+    background-color: #212020; /* Cambiar el color de fondo de la página */
+  }
+
+  .sidebar {
+    background-color: #351357d2; /* Cambiar el color de fondo de la barra vertical */
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.top-bar {
+    background-color: #351357d2;
+    padding: 10px;
+  }
+  
+  .store-name {
+    font-family: "Times New Roman", Times, serif; /* Cambiar el tipo de letra del nombre de la tienda en la barra superior */
+    color: #ede8e8; /* Cambiar el color del nombre de la tienda */
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .store-name {
+    font-size: 24px;
+  }
+  .store-name {
+    font-size: 24px;
+    color: #ffffff; /* Cambiar a tu color deseado, por ejemplo, rojo */
+  }
+  
+  .registration-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cambiar a tu color deseado, por ejemplo, azul */
+  }
+  .employee-section {
+    text-align: center;
+    color: #ffffff; /* Cambiar a tu color deseado, por ejemplo, verde */
+  }
+  /* Resto de estilos */
+  
+  /* Otros estilos que necesites */
+  
+
+  
+  .logo {
+    max-width: 50px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    margin-right: 10px;
+  }
+  
+  .store-name {
+    font-size: 27px; /* Ajusta el tamaño de la fuente del nombre de la tienda según tus necesidades */
+  }
+  
+  .other-logos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .other-logo {
+    max-width: 30px; /* Ajusta el tamaño máximo de los otros logos según tus necesidades */
+    margin-left: 22px;
+  }
+  
+  .sidebar {
+    background-color: #351357d2;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar-logos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-logo {
+    max-width: 50px; /* Ajusta el tamaño máximo de los logos en la barra lateral según tus necesidades */
+    margin-bottom: 33px;
+  }
+
+  /* Estilos previos */
+
+.registration-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #351357d2;
+  }
+  
+  .registration-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #351357d2;
+    color: #fcfcfc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .registration-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .registration-form p {
+    margin-top: 10px;
+  }
+  
+  .registration-form a {
+    color: #4caf50;
+  }
+  
+  .employee-section {
+    text-align: center;
+  }
+  
+  .employee-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #351357d2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .employee-button:hover {
+    background-color: #351357d2;
+  }
+  
+  /* Otros estilos que necesites */

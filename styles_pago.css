@@ -1,0 +1,77 @@
+/* Estilos para el encabezado */
+body {
+    background-color: #212020; /* Cambiar el color de fondo de la página */
+  }
+  
+.top-bar {
+    background-color:#351357d2 ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .store-name h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  /* Estilos para el contenido principal */
+  .main-content {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #351357d2;
+    border-radius: 17px;
+    color: #333;
+  }
+  
+  .button-group {
+    margin-top: 25px;
+  }
+  
+  button {
+    padding: 15px 40px;
+    background-color: #351357d2;
+    color: #fff;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+  
+  button.btn-cancelar {
+    background-color: #ce0e0e;
+    margin-left: 20px;
+  }
+  
