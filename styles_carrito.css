@@ -1,0 +1,70 @@
+/* Estilos para la barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #351357;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .store-name {
+    margin-left: 8px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .right-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-icons a {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para los logos */
+  .logo-container img,
+  .right-icons img {
+    max-height: 30px; /* Ajusta el tamaño máximo de las imágenes de los logos */
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes de los logos */
+  }
+  
+  /* Estilos para el mensaje de "No se han comprado artículos" */
+  .empty-message {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  /* Estilos para el contenido del carrito */
+  .cart-section {
+    padding: 20px;
+  }
+  
+  /* Estilos para los artículos del carrito */
+  .cart-items {
+    margin-top: 20px;
+  }
+  
+  /* Estilos generales */
+  body {
+    background-color:#212020 ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-message {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #351357;
+  }
+  
+  

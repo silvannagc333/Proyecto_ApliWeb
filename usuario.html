@@ -8,42 +8,42 @@
   <script src="script.js"></script> 
 </head>
 <body>
-    <body>
-        <div class="top-bar">
-          <div class="container">
-            <div class="logo-container">
-              <img src="casa-inteligente.png" alt="Logo" class="logo">
-              <h1 class="store-name">Tecno-Stream</h1>
-            </div>
-            <div class="other-logos">
-              <a href="busqueda.html"><img src="buscar.png" alt="Busqueda" class="other-logo"></a>
-              <a href="pagina2.html"><img src="carrito-de-compras (1).png" alt="Compras" class="other-logo"></a>
-              <a href="usuario.html"><img src="perfil-del-usuario.png" alt="Usuario" class="other-logo"></a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="sidebar">
-          <div class="sidebar-logos">
-            <a href="pagina4.html"><img src="vr.png" alt="Monitores" class="sidebar-logo"></a>
-            <a href="pagina5.html"><img src="auriculares.png" alt="Audifonos" class="sidebar-logo"></a>
-            <a href="pagina6.html"><img src="teclado.png" alt="Teclados" class="sidebar-logo"></a>
-            <a href="pagina7.html"><img src="raton-inalambrico.png" alt="Mouse" class="sidebar-logo"></a>
-            <a href="pagina8.html"><img src="almohadilla-de-juego (1).png" alt="Controles" class="sidebar-logo"></a>
-            <a href="pagina9.html"><img src="camara.png" alt="Camaras" class="sidebar-logo"></a>
-            <a href="pagina10.html"><img src="zumbido.png" alt="Otros..." class="sidebar-logo"></a>
-          </div>
-        </div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="logo-container">
+        <img src="casa-inteligente.png" alt="Logo" class="logo">
+        <h1 class="store-name">Tecno-Stream</h1>
+      </div>
+      <div class="other-logos">
+        <a href="busqueda.html"><img src="buscar.png" alt="Busqueda" class="other-logo"></a>
+        <a href="carrito.html"><img src="carrito-de-compras (1).png" alt="Compras" class="other-logo"></a>
+        <a href="usuario.html"><img src="perfil-del-usuario.png" alt="Usuario" class="other-logo"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-logos">
+      <a href="pagina4.html"><img src="vr.png" alt="Monitores" class="sidebar-logo"></a>
+      <a href="pagina5.html"><img src="auriculares.png" alt="Audifonos" class="sidebar-logo"></a>
+      <a href="pagina6.html"><img src="teclado.png" alt="Teclados" class="sidebar-logo"></a>
+      <a href="pagina7.html"><img src="raton-inalambrico.png" alt="Mouse" class="sidebar-logo"></a>
+      <a href="pagina8.html"><img src="almohadilla-de-juego (1).png" alt="Controles" class="sidebar-logo"></a>
+      <a href="pagina9.html"><img src="camara.png" alt="Camaras" class="sidebar-logo"></a>
+      <a href="pagina10.html"><img src="zumbido.png" alt="Otros..." class="sidebar-logo"></a>
+    </div>
+  </div>
 
   <main class="main-content">
     <div class="container">
       <div class="registration-form">
         <h2>Registro de Usuario</h2>
-        <form>
-          <input type="text" placeholder="Nombre de usuario" required>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="password" placeholder="Contraseña" required>
-          <button type="submit">Registrarse</button>
+        <form onsubmit="return mostrarMensajeRegistro()">
+          <input type="text" placeholder="Nombre de usuario" id="nombreUsuario" required>
+          <input type="email" placeholder="Correo electrónico" id="correoElectronico" required>
+          <input type="password" placeholder="Contraseña" id="contrasena" required>
+          <!-- Agregamos un ID al botón de registro -->
+          <button id="btnRegistro" type="submit">Registrarse</button>
         </form>
         <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></p>
       </div>
@@ -54,21 +54,32 @@
       </div>
     </div>
   </main>
-  <head>
-    <script>
-      function abrirVentanaEmpleado() {
-  var codigoEmpleado = prompt("Ingresa el código de empleado:");
 
-  if (codigoEmpleado === "1234") {
-    window.open("agregar_producto.html", "_blank", "width=400,height=400");
-  } else {
-    alert("Código de empleado incorrecto");
-  }
-}
+  <script>
+    function mostrarMensajeRegistro() {
+      // Evitamos que el formulario se envíe automáticamente (submit)
+      event.preventDefault();
 
-    </script>
-  </head>
-  
-  <script src="script.js"></script>
+      // Mostramos el mensaje de registro exitoso en una ventana emergente (popup)
+      alert("Usuario registrado exitosamente.");
+
+      // Reseteamos los valores de los campos del formulario
+      document.getElementById("nombreUsuario").value = "";
+      document.getElementById("correoElectronico").value = "";
+      document.getElementById("contrasena").value = "";
+
+      return false; // No enviamos el formulario
+    }
+
+    function abrirVentanaEmpleado() {
+      var codigoEmpleado = prompt("Ingresa el código de empleado:");
+
+      if (codigoEmpleado === "1234") {
+        window.open("agregar_producto.html", "_blank", "width=400,height=400");
+      } else {
+        alert("Código de empleado incorrecto");
+      }
+    }
+  </script>
 </body>
-</html>   
+</html>

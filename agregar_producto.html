@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecno-Stream - Agregar Producto</title>
+  <title>Tecno-Stream - Agregar o Eliminar Producto</title>
   <link rel="stylesheet" href="styles_agreprod.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 
   <main class="main-content">
     <div class="container">
-      <h2>Agregar Producto</h2>
+      <h2>Agregar o Eliminar Producto</h2>
       <form>
         <div>
           <label for="nombre">Nombre del producto:</label>
@@ -29,26 +29,28 @@
           <input type="number" id="precio" name="precio" step="0.01" required>
         </div>
         <div>
-            <label for="categoria">Categoría:</label>
-            <select id="categoria" name="categoria" required>
-              <option value="">Selecciona una categoría</option>
-              <option value="electrónica">Monitor</option>
-              <option value="ropa">Audifonos</option>
-              <option value="hogar">Teclado</option>
-              <option value="electrónica">Mouse</option>
-              <option value="ropa">Control</option>
-              <option value="hogar">Camara</option>
-              <option value="hogar">Otros...</option>
-              <!-- Agrega más opciones de categoría según tus necesidades -->
-            </select>
-          </div>
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecciona una categoría</option>
+            <option value="electrónica">Monitor</option>
+            <option value="ropa">Audífonos</option>
+            <option value="hogar">Teclado</option>
+            <option value="electrónica">Mouse</option>
+            <option value="ropa">Control</option>
+            <option value="hogar">Cámara</option>
+            <option value="hogar">Otros...</option>
+            <!-- Agrega más opciones de categoría según tus necesidades -->
+          </select>
+        </div>
         <div>
           <label for="imagen">Imagen:</label>
           <input type="file" id="imagen" name="imagen" accept="image/*" required>
         </div>
         <div class="button-group">
-          <button type="submit" class="btn-agregar">Agregar</button>
-          <button type="button" class="btn-cancelar" onclick="cancelarAgregar()">Cancelar</button>
+          <!-- Mensaje de confirmación para agregar producto -->
+          <button type="button" class="btn-agregar" onclick="confirmarAgregar()">Agregar</button>
+          <!-- Mensaje de confirmación para eliminar producto -->
+          <button type="button" class="btn-cancelar" onclick="confirmarEliminar()">Eliminar</button>
         </div>
       </form>
     </div>
